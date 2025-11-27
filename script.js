@@ -123,3 +123,16 @@ noBtn.addEventListener("click", () => {
   window.close();
   window.location.href = "https://www.google.pl";
 });
+
+// city div
+
+const city = document.getElementById("city");
+const cont = document.querySelectorAll(".foot-cont-three a");
+
+city.addEventListener("click", openCont);
+
+function openCont() {
+  Array.from(cont).forEach((el) => {
+    el.style.display = "block";
+  });
+}
